@@ -217,7 +217,7 @@ The India account runs one search campaign per product (CRM, manufacturing, ERP,
 ### Approach
 
 - Each product had its own campaign, keywords and ads, so the search term, the ad and the landing page matched.
-- An industry campaign added 54 ad groups (hotels, construction, accounting firms, solar and more), so each sector saw an ad written for its business.
+- An industry campaign added various ad groups (hotels, construction, accounting firms, solar and more), so each sector saw an ad written for its business.
 - Keywords moved from broad match to phrase match after broad match brought in conversions that were not relevant.
 - Bids used Target CPA, with targets set from what a lead is worth in India rather than copied from other countries.
 
@@ -243,7 +243,7 @@ The India account runs one search campaign per product (CRM, manufacturing, ERP,
 | ERP | 14,108 | $4.15 |
 | Inventory | 10,020 | $2.34 |
 | Purchase | 7,455 | $3.07 |
-| Industry (54 ad groups) | 5,898 | $5.39 |
+| Industry | 5,898 | $5.39 |
 | Sales | 4,985 | $1.26 |
 
 ### What the data showed
