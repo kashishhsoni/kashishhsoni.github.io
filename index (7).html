@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kashish Soni | Performance Marketer</title>
+<meta name="description" content="Kashish Soni is a performance marketer working remotely from India in the time zone of the company she joins. Case studies in B2B lead generation, paid social, paid search and analytics.">
+<meta property="og:title" content="Kashish Soni | Performance Marketer">
+<meta property="og:description" content="Case studies in B2B lead generation, paid social, paid search and analytics.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5F8; --surface:#FFFFFF; --ink:#132036; --muted:#566176; --line:#D6DCE6;
+  --accent:#2445D4; --accent-ink:#FFFFFF; --accent-soft:#E5EAFC;
+  --good:#0A7658; --good-soft:#E1F2EA; --flag:#8A5300; --flag-soft:#FBF0DD;
+  --radius-lg:14px; --radius-sm:6px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1424; --surface:#141E32; --ink:#E6EBF4; --muted:#9BA7BD; --line:#253149;
+    --accent:#86A0FF; --accent-ink:#0D1424; --accent-soft:#1B2850;
+    --good:#4DCB9C; --good-soft:#123128; --flag:#F2B860; --flag-soft:#33270F;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1424; --surface:#141E32; --ink:#E6EBF4; --muted:#9BA7BD; --line:#253149;
+  --accent:#86A0FF; --accent-ink:#0D1424; --accent-soft:#1B2850;
+  --good:#4DCB9C; --good-soft:#123128; --flag:#F2B860; --flag-soft:#33270F;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font:400 1.0625rem/1.6 "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-variant-numeric:tabular-nums; -webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent); outline-offset:3px; border-radius:4px}
+.wrap{max-width:1120px; margin:0 auto; padding:0 24px}
+.prose{max-width:68ch}
+h1,h2,h3{line-height:1.15; letter-spacing:-0.02em; margin:0}
+h2{font-size:clamp(1.75rem,3.2vw,2.4rem); font-weight:800}
+h3{font-size:1.2rem; font-weight:700}
+p{margin:0 0 1em}
+.muted{color:var(--muted)}
+.ph{background:var(--flag-soft); color:var(--flag); padding:0 .25em; border-radius:3px}
+
+/* Header */
+.top{position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex; align-items:center; gap:24px; height:64px}
+.brand{font-weight:800; text-decoration:none; color:var(--ink); margin-right:auto}
+.nav{display:flex; gap:20px}
+.nav a{color:var(--muted); text-decoration:none; font-weight:500; font-size:.95rem}
+.nav a:hover{color:var(--ink)}
+.theme{background:none; border:1px solid var(--line); color:var(--ink); border-radius:999px;
+  padding:6px 12px; font:inherit; font-size:.85rem; cursor:pointer}
+@media (max-width:760px){.nav{display:none}}
+
+/* Hero */
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.1rem); font-weight:800; letter-spacing:-0.035em; max-width:13ch}
+.hero .lede{font-size:1.2rem; color:var(--muted); margin:24px 0 32px; max-width:46ch}
+.btns{display:flex; flex-wrap:wrap; gap:12px}
+.btn{display:inline-block; padding:13px 22px; border-radius:var(--radius-sm); font-weight:700; text-decoration:none; border:2px solid var(--accent)}
+.btn.primary{background:var(--accent); color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr; gap:40px}.hero{padding-top:48px}}
+
+/* Funnel */
+.funnel-box{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:28px 24px 20px}
+.funnel{list-style:none; margin:0; padding:0; display:grid; gap:0}
+.stage{display:grid; justify-items:center}
+.bar{width:var(--w); min-height:58px; display:flex; justify-content:space-between; align-items:center; gap:12px;
+  padding:10px 30px; color:var(--accent-ink); background:var(--c);
+  clip-path:polygon(0 0,100% 0,calc(100% - 16px) 100%,16px 100%);
+  animation:grow .9s cubic-bezier(.2,.7,.2,1) both; animation-delay:var(--d)}
+.bar span{font-weight:500; font-size:.95rem}
+.bar strong{font-size:1.25rem; font-weight:800}
+.stage.open .bar{background:transparent; color:var(--flag); clip-path:none; border:2px dashed var(--flag); border-radius:4px}
+.rate{font-size:.82rem; color:var(--muted); padding:5px 0}
+.funnel-cap{font-size:.85rem; color:var(--muted); margin:16px 0 0}
+@keyframes grow{from{width:12%; opacity:0}to{width:var(--w); opacity:1}}
+@media (prefers-reduced-motion:reduce){.bar{animation:none}html{scroll-behavior:auto}}
+
+/* Sections */
+section.block{padding:80px 0; border-top:1px solid var(--line)}
+.sec-head{display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:40px; flex-wrap:wrap}
+.sec-head p{max-width:52ch; margin:0}
+
+/* Case study */
+.case{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:clamp(24px,4vw,48px); margin-bottom:28px}
+.case-title{font-size:clamp(1.5rem,2.8vw,2.1rem); font-weight:800; max-width:28ch; margin-bottom:12px}
+.tag{display:inline-block; font-size:.82rem; font-weight:700; padding:3px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent); margin-bottom:16px}
+.facts{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px 24px; margin:28px 0 36px; padding:24px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.facts dt{font-size:.82rem; color:var(--muted); margin-bottom:2px}
+.facts dd{margin:0; font-weight:500}
+@media (max-width:860px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.case-body{display:grid; grid-template-columns:200px 1fr; gap:12px 40px}
+.case-body h3{padding-top:4px}
+.case-body > div{padding-bottom:28px}
+@media (max-width:760px){.case-body{grid-template-columns:1fr}.case-body h3{padding-top:12px}}
+.case ul{margin:0 0 1em; padding-left:1.2em}
+.case li{margin-bottom:.55em}
+
+.kpis{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:4px 0 20px}
+.kpi{background:var(--surface); padding:18px}
+.kpi b{display:block; font-size:1.7rem; font-weight:800; letter-spacing:-0.02em}
+.kpi span{font-size:.88rem; color:var(--muted)}
+.kpi.win b{color:var(--good)}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.chart{margin:8px 0 20px}
+.chart-row{display:grid; grid-template-columns:minmax(150px,230px) 1fr; gap:14px; align-items:center; margin-bottom:8px; font-size:.9rem}
+.chart-track{background:var(--bg); border-radius:4px; height:26px; position:relative}
+.chart-fill{height:100%; width:var(--v); background:var(--accent); border-radius:4px}
+.chart-fill.best{background:var(--good)}
+.chart-val{position:absolute; left:calc(var(--v) + 8px); top:50%; transform:translateY(-50%); white-space:nowrap; font-weight:700}
+.chart-row.far .chart-val{left:auto; right:8px; color:var(--accent-ink)}
+@media (max-width:560px){.chart-row{grid-template-columns:1fr; gap:4px}}
+
+.tbl-wrap{overflow-x:auto; margin:0 0 20px; border:1px solid var(--line); border-radius:10px}
+table{border-collapse:collapse; width:100%; font-size:.93rem; min-width:520px}
+th,td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line)}
+th{font-weight:700; background:var(--bg)}
+tr:last-child td{border-bottom:none}
+td.num{text-align:right}
+.note{font-size:.88rem; color:var(--muted); border-left:3px solid var(--line); padding-left:12px}
+
+.case.placeholder{border-style:dashed; background:transparent}
+.case.placeholder .facts{margin-bottom:12px}
+
+/* Services */
+.services{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 56px}
+.services > div{border-top:3px solid var(--accent); padding-top:18px}
+.services h3{margin-bottom:8px}
+@media (max-width:760px){.services{grid-template-columns:1fr}}
+
+/* Tools */
+.tools{display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; margin:0 0 28px}
+.tools li{border:1px solid var(--line); background:var(--surface); padding:8px 16px; border-radius:999px; font-weight:500}
+
+/* Hours */
+.hours{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px}
+.hours > div{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px}
+.hours b{display:block; font-size:1.35rem; font-weight:800; margin:4px 0}
+@media (max-width:760px){.hours{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{background:var(--accent); color:var(--accent-ink); border-radius:var(--radius-lg); padding:clamp(28px,5vw,56px)}
+.contact h2{max-width:20ch}
+.contact p{max-width:52ch; margin:16px 0 28px; opacity:.92}
+.contact .btn{border-color:var(--accent-ink)}
+.contact .btn.primary{background:var(--accent-ink); color:var(--accent)}
+.contact .btn.ghost{color:var(--accent-ink)}
+footer{padding:40px 0 56px; color:var(--muted); font-size:.9rem}
+
+/* ---------- Colour layer ---------- */
+:root{ --c1:#4F46E5; --c2:#DB2777; --c3:#0D9488; --c4:#F59E0B; --c5:#7C3AED; }
+:root[data-theme="dark"]{ --c1:#818CF8; --c2:#F472B6; --c3:#2DD4BF; --c4:#FBBF24; --c5:#A78BFA; }
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){ --c1:#818CF8; --c2:#F472B6; --c3:#2DD4BF; --c4:#FBBF24; --c5:#A78BFA; }}
+.brand{display:flex; align-items:center; gap:10px}
+.brand::before{content:""; width:14px; height:14px; border-radius:50%; background:conic-gradient(var(--c1),var(--c5),var(--c2),var(--c4),var(--c3),var(--c1))}
+.nav a:hover{color:var(--c1)}
+.hero{position:relative; overflow:hidden;
+  background:
+    radial-gradient(600px 380px at 8% 10%, color-mix(in srgb,var(--c1) 22%,transparent), transparent 70%),
+    radial-gradient(520px 360px at 92% 20%, color-mix(in srgb,var(--c2) 20%,transparent), transparent 70%),
+    radial-gradient(520px 320px at 60% 110%, color-mix(in srgb,var(--c3) 18%,transparent), transparent 70%)}
+.grad{background:linear-gradient(90deg,var(--c1),var(--c5) 45%,var(--c2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.btn.primary{background:linear-gradient(90deg,#4F46E5,#7C3AED); border-color:transparent; color:#fff}
+.btn.ghost{border-color:var(--c2); color:var(--c2); background:color-mix(in srgb,var(--surface) 70%,transparent)}
+.funnel-box{box-shadow:0 20px 50px -20px color-mix(in srgb,var(--c1) 45%,transparent)}
+.funnel .stage:nth-child(1) .bar{background:linear-gradient(90deg,var(--c1),var(--c5)); color:#fff}
+.funnel .stage:nth-child(2) .bar{background:linear-gradient(90deg,var(--c5),var(--c2)); color:#fff}
+.funnel .stage:nth-child(3) .bar{background:linear-gradient(90deg,var(--c2),var(--c4)); color:#fff}
+#work{background:linear-gradient(180deg, color-mix(in srgb,var(--c1) 6%,var(--bg)), var(--bg) 40%)}
+.case{position:relative; border-top:6px solid var(--cc,var(--c1)); box-shadow:0 18px 40px -28px color-mix(in srgb,var(--cc,var(--c1)) 60%,transparent)}
+.case:nth-of-type(1){--cc:var(--c1)} .case:nth-of-type(2){--cc:var(--c2)} .case:nth-of-type(3){--cc:var(--c3)}
+.case .tag{background:color-mix(in srgb,var(--cc) 14%,var(--surface)); color:var(--cc)}
+.case-body h3{color:var(--cc)}
+.facts dt{color:var(--cc); font-weight:600; text-transform:uppercase; letter-spacing:.04em; font-size:.74rem}
+.kpis{background:transparent; border:none; gap:12px}
+.kpi{border-radius:10px; background:color-mix(in srgb,var(--cc) 9%,var(--surface)); border:1px solid color-mix(in srgb,var(--cc) 25%,var(--line))}
+.kpi b{color:var(--cc)}
+.kpi.win b{color:var(--cc)}
+th{background:color-mix(in srgb,var(--cc,var(--c1)) 12%,var(--surface)); color:var(--ink)}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--cc,var(--c1)) 4%,var(--surface))}
+.tbl-wrap{border-color:color-mix(in srgb,var(--cc,var(--c1)) 25%,var(--line))}
+.chart-fill{background:linear-gradient(90deg,var(--c1),var(--c5))}
+.chart-fill.best{background:linear-gradient(90deg,var(--c3),#22C55E)}
+.case ul li::marker{color:var(--cc)}
+.note{border-left-color:var(--cc,var(--c1))}
+#services{background:linear-gradient(180deg, color-mix(in srgb,var(--c5) 6%,var(--bg)), var(--bg))}
+.services > div{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--sc); border-radius:12px; padding:22px}
+.services > div:nth-child(1){--sc:var(--c1)} .services > div:nth-child(2){--sc:var(--c2)} .services > div:nth-child(3){--sc:var(--c5)} .services > div:nth-child(4){--sc:var(--c3)} .services > div:nth-child(5){--sc:var(--c4)}
+.services h3{color:var(--sc)}
+.services > div:nth-child(5) h3{color:color-mix(in srgb,var(--c4) 65%,var(--ink))}
+.tools li{border-color:transparent; font-weight:600}
+.tools li:nth-child(5n+1){background:color-mix(in srgb,var(--c1) 14%,var(--surface)); color:var(--c1)}
+.tools li:nth-child(5n+2){background:color-mix(in srgb,var(--c2) 14%,var(--surface)); color:var(--c2)}
+.tools li:nth-child(5n+3){background:color-mix(in srgb,var(--c3) 14%,var(--surface)); color:var(--c3)}
+.tools li:nth-child(5n+4){background:color-mix(in srgb,var(--c5) 14%,var(--surface)); color:var(--c5)}
+.tools li:nth-child(5n+5){background:color-mix(in srgb,var(--c4) 18%,var(--surface)); color:color-mix(in srgb,var(--c4) 70%,var(--ink))}
+.hours > div{border-left:4px solid var(--hc)}
+.hours > div:nth-child(1){--hc:var(--c1)} .hours > div:nth-child(2){--hc:var(--c2)} .hours > div:nth-child(3){--hc:var(--c3)}
+.hours b{color:var(--ink)}
+.contact{background:linear-gradient(120deg,#4F46E5,#7C3AED 50%,#DB2777); color:#fff}
+.contact .btn{border-color:#fff}
+.contact .btn.primary{background:#fff; color:#4F46E5}
+.contact .btn.ghost{color:#fff; background:transparent}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Kashish Soni</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Case studies</a>
+      <a href="#services">What I do</a>
+      <a href="#tools">Tools</a>
+      <a href="#hours">Hours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>I turn ad spend into <span class="grad">measurable pipeline.</span></h1>
+      <p class="lede">I'm a performance marketer with 8 years of experience across LinkedIn, Meta and Google Ads. I plan campaigns, set up tracking and read the numbers until I know which part of the budget is doing the work. I work remotely from India.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Work with me</a>
+        <a class="btn ghost" href="#work">See case studies</a>
+      </div>
+    </div>
+
+    <figure class="funnel-box" style="margin:0">
+      <ol class="funnel" aria-label="Campaign funnel from a B2B LinkedIn Ads account">
+        <li class="stage">
+          <div class="bar" style="--w:100%;--c:var(--accent);--d:0s"><span>Impressions</span><strong>533,868</strong></div>
+          <div class="rate">0.44% click-through rate</div>
+        </li>
+        <li class="stage">
+          <div class="bar" style="--w:80%;--c:color-mix(in srgb,var(--accent) 70%,var(--good));--d:.12s"><span>Clicks</span><strong>2,336</strong></div>
+          <div class="rate">5.35% of clicks became leads</div>
+        </li>
+        <li class="stage">
+          <div class="bar" style="--w:60%;--c:var(--good);--d:.24s"><span>Leads</span><strong>125</strong></div>
+        </li>
+      </ol>
+      <figcaption class="funnel-cap">Real numbers from a B2B LinkedIn Ads account with $15,947.71 in spend. The full breakdown is in the first case study below.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Case studies</h2>
+      <p class="muted">Every figure comes from platform data. Where a client is under NDA, I describe the industry instead of naming the company.</p>
+    </div>
+
+    <article class="case">
+      <span class="tag">Consulting project</span>
+      <h3 class="case-title">$37 per enterprise lead on the top LinkedIn campaigns, and the 10x creative gap behind it</h3>
+      <p class="muted prose">B2B lead generation and awareness for a banking technology company across the UK, the Middle East and India.</p>
+
+      <dl class="facts">
+        <div><dt>Industry</dt><dd>Banking and fintech technology (B2B)</dd></div>
+        <div><dt>My role</dt><dd>Strategy, setup, targeting, optimisation and reporting</dd></div>
+        <div><dt>Channel</dt><dd>LinkedIn Ads</dd></div>
+        <div><dt>Markets</dt><dd>UK, Middle East, India</dd></div>
+        <div><dt>Total spend</dt><dd>$15,947.71 (USD)</dd></div>
+        <div><dt>Period</dt><dd>June to November 2025</dd></div>
+        <div><dt>Leads</dt><dd>125</dd></div>
+        <div><dt>Formats</dt><dd>Single image, document, carousel, video</dd></div>
+      </dl>
+
+      <div class="case-body">
+        <h3>Goal</h3>
+        <div class="prose">
+          <p>The account had two jobs. Lead generation campaigns offered a gated whitepaper to decision-makers in the UK and the Middle East. Awareness campaigns supported a UK expansion message, an AI Day event in India and a transaction banking proposition.</p>
+          <p>The business aim was to warm up a cold audience and hand the sales team leads they could reach out to.</p>
+        </div>
+
+        <h3>Strategy</h3>
+        <div class="prose">
+          <ul>
+            <li>Campaigns were split by market and by objective, so every budget line had one job and one KPI to be judged on.</li>
+            <li>A gated whitepaper was the lead offer, captured through lead forms, because it gives senior buyers a reason to share their details before they are ready for a sales call.</li>
+            <li>The same offer ran in different formats and creative variants, so format and creative could be compared on cost per lead rather than on clicks.</li>
+            <li>Awareness ran in parallel with image, carousel and video to warm up the UK and India markets.</li>
+          </ul>
+          <p>I chose a whitepaper because the product, AI for banking, involves complex decision-making. A cold audience wants to study the subject before talking to anyone, so a download in exchange for their details was the right first step. It also warmed the audience up for the sales team to reach out.</p>
+        </div>
+
+        <h3>Execution</h3>
+        <div class="prose">
+          <p>The account ran 14 campaigns and 10 tracked creatives across three markets. Lead generation took 54% of spend ($8,635.96) and awareness took 43% ($6,824.59).</p>
+          <p>I used manual bidding and reviewed it every week, adjusting bids based on reach and CPM.</p>
+        </div>
+
+        <h3>Analysis</h3>
+        <div>
+          <p class="prose">I compared every lead generation campaign on cost per lead, which shows how much the result depended on creative and format rather than budget.</p>
+          <div class="chart" role="img" aria-label="Cost per lead by lead generation campaign, from $22.14 to $361.37">
+            <div class="chart-row"><span>Middle East, document</span><div class="chart-track"><div class="chart-fill best" style="--v:6.1%"></div><span class="chart-val" style="--v:6.1%">$22.14 (14 leads)</span></div></div>
+            <div class="chart-row"><span>UK, image variant 2</span><div class="chart-track"><div class="chart-fill best" style="--v:9.7%"></div><span class="chart-val" style="--v:9.7%">$34.94 (43 leads)</span></div></div>
+            <div class="chart-row"><span>UK, image variant 1</span><div class="chart-track"><div class="chart-fill" style="--v:18.7%"></div><span class="chart-val" style="--v:18.7%">$67.40 (10 leads)</span></div></div>
+            <div class="chart-row"><span>Middle East, image</span><div class="chart-track"><div class="chart-fill" style="--v:20.2%"></div><span class="chart-val" style="--v:20.2%">$72.85 (31 leads)</span></div></div>
+            <div class="chart-row"><span>UK, document</span><div class="chart-track"><div class="chart-fill" style="--v:37.6%"></div><span class="chart-val" style="--v:37.6%">$135.76 (26 leads)</span></div></div>
+            <div class="chart-row far"><span>UK, image variant 3</span><div class="chart-track"><div class="chart-fill" style="--v:100%"></div><span class="chart-val" style="--v:100%">$361.37 (1 lead)</span></div></div>
+          </div>
+          <ul class="prose">
+            <li><strong>The top three campaigns averaged $37.11 per lead.</strong> The Middle East document ad and the two strongest UK image variants produced 67 leads on $2,486.61, more than half of all leads on 29% of lead generation spend.</li>
+            <li><strong>Creative was the biggest lever.</strong> Two UK image variants promoting the same whitepaper landed at $34.94 and $361.37 per lead, a gap of more than 10x. The best variant also turned 20.6% of clicks into leads.</li>
+            <li><strong>The best format depended on the market.</strong> In the UK, the three image campaigns averaged $47.00 per lead against $135.76 for the document ad. In the Middle East it was the other way round, with the document ad at $22.14 against $72.85 for image, although on a smaller $310 budget.</li>
+            <li><strong>One creative carried the account.</strong> The best whitepaper creative produced 52 of the 125 leads (42%) at about $45.82 per lead.</li>
+            <li><strong>The right people were clicking.</strong> Founders, CEOs, managing directors, directors, VPs, board members and executive directors made up 69.6% of clicks. Named banks such as ICICI Bank, HSBC, Lloyds Banking, Barclays and JPMorgan appeared among the top companies reached.</li>
+            <li><strong>Some audiences need a quality check.</strong> The IT services segment clicked at 1.84%, roughly three times the other segments, but those users may be vendors rather than buyers. Education and real estate segments also received impressions, which points to targeting that could be tightened.</li>
+          </ul>
+        </div>
+
+        <h3>Results</h3>
+        <div>
+          <div class="kpis">
+            <div class="kpi win"><b>$37.11</b><span>CPL across the top three campaigns (67 leads)</span></div>
+            <div class="kpi win"><b>$34.94</b><span>CPL on the best UK campaign</span></div>
+            <div class="kpi"><b>125</b><span>Leads in total</span></div>
+            <div class="kpi"><b>69.6%</b><span>Clicks from founders, CXOs, directors and VPs</span></div>
+          </div>
+          <div class="tbl-wrap">
+            <table>
+              <thead><tr><th>Metric</th><th>Lead generation</th><th>Awareness</th><th>Whole account</th></tr></thead>
+              <tbody>
+                <tr><td>Spend (USD)</td><td class="num">$8,635.96</td><td class="num">$6,824.59</td><td class="num">$15,947.71</td></tr>
+                <tr><td>Impressions</td><td class="num">140,029</td><td class="num">383,755</td><td class="num">533,868</td></tr>
+                <tr><td>Clicks</td><td class="num">771</td><td class="num">1,448</td><td class="num">2,336</td></tr>
+                <tr><td>CTR</td><td class="num">0.55%</td><td class="num">0.38%</td><td class="num">0.44%</td></tr>
+                <tr><td>CPM</td><td class="num">$61.67</td><td class="num">$17.78</td><td class="num"></td></tr>
+                <tr><td>Leads</td><td class="num">125</td><td class="num">0</td><td class="num">125</td></tr>
+                <tr><td>Cost per lead</td><td class="num">$69.09</td><td class="num">n/a</td><td class="num">$127.58</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Across all lead generation campaigns the cost per lead was $69.09, which is the honest blended figure for an audience of senior banking decision-makers. All KPIs here are recalculated from raw spend, impressions, clicks and leads. About $487 of spend sat in campaigns outside this breakdown. There was no earlier campaign to compare against, because no LinkedIn campaigns had run before mine. The sales cycle is usually one to two years, so pipeline and revenue from these leads cannot be measured yet.</p>
+        </div>
+
+        <h3>Learnings</h3>
+        <div class="prose">
+          <ul>
+            <li>In B2B LinkedIn, creative testing moves cost per lead far more than bid tweaks, so I would budget for a new variant every few weeks.</li>
+            <li>Format results do not travel between markets, so each market needs its own image versus document test.</li>
+            <li>A high CTR from an adjacent industry is not a win until lead quality confirms it.</li>
+            <li>Awareness and lead generation should be reported separately, because blending them makes the cost per lead look almost twice as high as it was.</li>
+          </ul>
+          <p><strong>What happened next.</strong> The client first wanted to target only large banks. Based on the results, we decided to include mid-size and smaller banks too, and shifted 40% of the budget to them.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="case">
+      <span class="tag">In-house at a global business software company</span>
+      <h3 class="case-title">10,704 leads from a business software conference, and why the cheapest registration was not the cheapest lead</h3>
+      <p class="muted prose">Meta and LinkedIn campaigns for a two-day business software conference in Gandhinagar, India, and 11 industry tracks that ran alongside it.</p>
+
+      <dl class="facts">
+        <div><dt>Industry</dt><dd>Business software (ERP), B2B events</dd></div>
+        <div><dt>My role</dt><dd>End to end, from strategy to execution</dd></div>
+        <div><dt>Channels</dt><dd>Meta Ads, LinkedIn Ads (message ads and video)</dd></div>
+        <div><dt>Event</dt><dd>11 to 12 September 2026, Gandhinagar</dd></div>
+        <div><dt>Total spend</dt><dd>$133,701</dd></div>
+        <div><dt>Registrations</dt><dd>22,289 (platform reported)</dd></div>
+        <div><dt>Leads</dt><dd>10,704</dd></div>
+        <div><dt>Main event turn-up</dt><dd>12%</dd></div>
+      </dl>
+
+      <div class="case-body">
+        <h3>Goal</h3>
+        <div class="prose">
+          <p>The goal was to fill an in-person conference and 11 industry tracks (accounting, HR, developers, AI, manufacturing, logistics, e-commerce, retail and POS, food and beverage, services and marketing) with registered business attendees, and to turn those registrations into sales leads.</p>
+        </div>
+
+        <h3>Strategy</h3>
+        <div class="prose">
+          <ul>
+            <li>The campaign ran in two layers. A core layer promoted the whole event, segmented by language and city. An industry layer gave every track its own ad set and its own message, so a logistics owner saw a logistics invitation rather than a generic one.</li>
+            <li>Meta carried reach and volume at a low cost per thousand impressions. LinkedIn carried precision through message ads sent to professionals by role and location.</li>
+            <li>Regional language ads in Gujarati, Marathi and Tamil were tested against English to see whether local language lowered the cost of a registration.</li>
+          </ul>
+          <p>The target audience was business owners across every track.</p>
+        </div>
+
+        <h3>Execution</h3>
+        <div class="prose">
+          <p>The campaign ran 17 Meta ad sets and 16 LinkedIn ad sets. Meta optimised for completed registrations on the event website. On LinkedIn, message ads ran on maximum delivery and video ads on manual bids. Meta took 68% of spend ($90,602) and LinkedIn took 32% ($43,100). The Marathi and Tamil ad sets were switched off after spending $849.57 between them.</p>
+        </div>
+
+        <h3>Analysis</h3>
+        <div>
+          <p class="prose">I compared every ad set on cost per registration, then followed each industry track through to the leads it produced in the event CRM.</p>
+          <div class="chart" role="img" aria-label="Meta cost per registration by language and region, from $3.53 to $23.92">
+            <div class="chart-row"><span>Gujarati</span><div class="chart-track"><div class="chart-fill best" style="--v:14.8%"></div><span class="chart-val" style="--v:14.8%">$3.53 (298 registrations)</span></div></div>
+            <div class="chart-row"><span>English, core audience</span><div class="chart-track"><div class="chart-fill best" style="--v:17.6%"></div><span class="chart-val" style="--v:17.6%">$4.22 (4,990)</span></div></div>
+            <div class="chart-row"><span>English, India-wide</span><div class="chart-track"><div class="chart-fill" style="--v:20.3%"></div><span class="chart-val" style="--v:20.3%">$4.86 (3,250)</span></div></div>
+            <div class="chart-row"><span>Marathi</span><div class="chart-track"><div class="chart-fill" style="--v:51.9%"></div><span class="chart-val" style="--v:51.9%">$12.42 (53)</span></div></div>
+            <div class="chart-row far"><span>Tamil</span><div class="chart-track"><div class="chart-fill" style="--v:100%"></div><span class="chart-val" style="--v:100%">$23.92 (8)</span></div></div>
+          </div>
+          <ul class="prose">
+            <li><strong>Local language and local geography won on registrations.</strong> Gujarati ads cost $3.53 per registration against $23.92 for Tamil, a 6.8x gap, for an event held in Gujarat. On LinkedIn, the Gujarat message campaign produced 85% of core event conversions, while Bangalore spent $192.89 for none.</li>
+            <li><strong>LinkedIn message ads beat LinkedIn video.</strong> Gujarat video cost $47.63 per conversion against $16.25 for message ads, and its CPM of $10.25 was 14 times Meta's $0.73.</li>
+            <li><strong>The best registration channel depended on the audience.</strong> LinkedIn was cheaper for job-title audiences such as HR (2.5x) and accounting (2.0x). Meta was cheaper for sector audiences such as e-commerce (26.6x) and logistics (10.2x).</li>
+            <li><strong>Cheap registrations did not always become cheap leads.</strong> Retail and POS had the cheapest registration in the whole campaign at $1.71, yet it had the most expensive leads at $35.08 each. Developers registered cheaply on LinkedIn but cost $23.37 per lead. HR was efficient at both stages, at $10.77 per lead.</li>
+          </ul>
+          <div class="tbl-wrap">
+            <table>
+              <thead><tr><th>Industry track</th><th>Ad spend</th><th>Leads</th><th>Cost per lead</th></tr></thead>
+              <tbody>
+                <tr><td>HR</td><td class="num">$5,728</td><td class="num">532</td><td class="num">$10.77</td></tr>
+                <tr><td>E-commerce</td><td class="num">$6,004</td><td class="num">422</td><td class="num">$14.23</td></tr>
+                <tr><td>Food and beverage</td><td class="num">$5,262</td><td class="num">368</td><td class="num">$14.29</td></tr>
+                <tr><td>Logistics</td><td class="num">$5,569</td><td class="num">326</td><td class="num">$17.08</td></tr>
+                <tr><td>AI</td><td class="num">$3,961</td><td class="num">227</td><td class="num">$17.45</td></tr>
+                <tr><td>Manufacturing</td><td class="num">$7,027</td><td class="num">367</td><td class="num">$19.15</td></tr>
+                <tr><td>Accounting</td><td class="num">$6,876</td><td class="num">335</td><td class="num">$20.53</td></tr>
+                <tr><td>Developers</td><td class="num">$7,197</td><td class="num">308</td><td class="num">$23.37</td></tr>
+                <tr><td>Marketing</td><td class="num">$7,374</td><td class="num">305</td><td class="num">$24.18</td></tr>
+                <tr><td>Services</td><td class="num">$3,487</td><td class="num">102</td><td class="num">$34.19</td></tr>
+                <tr><td>Retail and POS</td><td class="num">$5,789</td><td class="num">165</td><td class="num">$35.08</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3>Results</h3>
+        <div>
+          <div class="kpis">
+            <div class="kpi win"><b>10,704</b><span>Leads from the event and its tracks</span></div>
+            <div class="kpi"><b>22,289</b><span>Registrations across both platforms</span></div>
+            <div class="kpi win"><b>$9.58</b><span>Cost per lead, main event</span></div>
+            <div class="kpi"><b>12%</b><span>Main event turn-up rate</span></div>
+          </div>
+          <div class="tbl-wrap">
+            <table>
+              <thead><tr><th>Layer</th><th>Ad spend</th><th>Registrations</th><th>Cost per registration</th><th>Leads</th><th>Cost per lead</th></tr></thead>
+              <tbody>
+                <tr><td>Main event</td><td class="num">$69,427</td><td class="num">10,110</td><td class="num">$6.86</td><td class="num">7,247</td><td class="num">$9.58</td></tr>
+                <tr><td>Industry tracks</td><td class="num">$64,275</td><td class="num">12,179</td><td class="num">$5.27</td><td class="num">3,457</td><td class="num">$18.59</td></tr>
+                <tr><td><strong>Total</strong></td><td class="num"><strong>$133,701</strong></td><td class="num"><strong>22,289</strong></td><td class="num"><strong>$6.00</strong></td><td class="num"><strong>10,704</strong></td><td class="num"><strong>$12.49</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Registrations are platform reported, and one person may have registered through both platforms. Leads come only from paid campaigns and are counted in the event CRM. Cost per lead divides ad spend by those leads. Amounts are converted from Indian rupees at about 95 rupees to the US dollar, the rate during the campaign.</p>
+        </div>
+
+        <h3>Learnings</h3>
+        <div class="prose">
+          <ul>
+            <li>For an in-person event, budget should start close to the venue and in the local language, then move outward only while it stays efficient.</li>
+            <li>The channel should be chosen per audience. Job-title audiences belong on LinkedIn, and sector or owner audiences belong on Meta.</li>
+            <li>Registration cost is the wrong final metric. Next time I would judge each track on cost per lead, so a cheap but low-intent audience like retail and POS cannot pull budget away from HR.</li>
+            <li>A 12% turn-up rate means most of the value sits after registration, so reminder sequences and pre-event engagement deserve as much planning as the ads.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="case">
+      <span class="tag">In-house at a global business software company, with the paid search team</span>
+      <h3 class="case-title">84,358 search leads in India at $3.11 each</h3>
+      <p class="muted prose">Always-on Google Ads search for a business software company in India, run by the paid search team. I looked after the India search campaigns with the team, including bid and keyword adjustments.</p>
+
+      <dl class="facts">
+        <div><dt>Industry</dt><dd>Business software (ERP), B2B SaaS</dd></div>
+        <div><dt>My role</dt><dd>Looked after the India search campaigns with the team, including bid and keyword adjustments</dd></div>
+        <div><dt>Channel</dt><dd>Google Ads, search</dd></div>
+        <div><dt>Market</dt><dd>India</dd></div>
+        <div><dt>Spend</dt><dd>$262,001</dd></div>
+        <div><dt>Period</dt><dd>1 January to 25 November 2026</dd></div>
+        <div><dt>Leads</dt><dd>84,358</dd></div>
+        <div><dt>Bidding</dt><dd>Target CPA</dd></div>
+      </dl>
+
+      <div class="case-body">
+        <h3>Goal</h3>
+        <div class="prose"><p>The India account runs one search campaign per product (CRM, manufacturing, ERP, inventory and others). The goal was a steady flow of leads at a cost that made sense for the Indian market, where only a small share of leads go on to buy.</p></div>
+
+        <h3>Approach</h3>
+        <div class="prose"><ul>
+          <li>Each product had its own campaign, keywords and ads, so the search term, the ad and the landing page matched.</li>
+          <li>An industry campaign added 54 ad groups (hotels, construction, accounting firms, solar and more), so each sector saw an ad written for its business.</li>
+          <li>Keywords moved from broad match to phrase match after broad match brought in conversions that were not relevant.</li>
+          <li>Bids used Target CPA, with targets set from what a lead is worth in India rather than copied from other countries.</li>
+        </ul></div>
+
+        <h3>Results</h3>
+        <div>
+          <div class="kpis">
+            <div class="kpi win"><b>$3.11</b><span>Cost per lead</span></div>
+            <div class="kpi"><b>84,358</b><span>Leads, Jan to Nov 2026</span></div>
+            <div class="kpi win"><b>20.7%</b><span>Click to lead rate</span></div>
+            <div class="kpi"><b>6.95%</b><span>Click-through rate</span></div>
+          </div>
+          <div class="tbl-wrap"><table><thead><tr><th>Campaign</th><th>Leads</th><th>Cost per lead</th></tr></thead><tbody><tr><td>CRM</td><td class="num">16,974</td><td class="num">$3.07</td></tr><tr><td>Manufacturing (MRP)</td><td class="num">15,361</td><td class="num">$3.75</td></tr><tr><td>ERP</td><td class="num">14,108</td><td class="num">$4.15</td></tr><tr><td>Inventory</td><td class="num">10,020</td><td class="num">$2.34</td></tr><tr><td>Purchase</td><td class="num">7,455</td><td class="num">$3.07</td></tr><tr><td>Industry (54 ad groups)</td><td class="num">5,898</td><td class="num">$5.39</td></tr><tr><td>Sales</td><td class="num">4,985</td><td class="num">$1.26</td></tr></tbody></table></div>
+        </div>
+
+        <h3>What the data showed</h3>
+        <div>
+          <ul class="prose">
+            <li><strong>Lead forms were the cheapest source of leads.</strong> Lead form extensions produced 20,455 leads at $2.12 each with a 43.4% conversion rate, against $3.38 per lead from headline clicks.</li>
+            <li><strong>Product intent beat broad interest.</strong> Inventory came in at $2.34 per lead and CRM and Purchase at $3.07, while the wider ERP campaign cost $4.15.</li>
+            <li><strong>Industry ad groups cost more but reached new sectors.</strong> The industry campaign averaged $5.39 per lead. The strongest sectors are below.</li>
+          </ul>
+          <div class="tbl-wrap"><table><thead><tr><th>Industry ad group</th><th>Leads</th><th>Cost per lead</th><th>Click to lead</th></tr></thead><tbody><tr><td>Accounting firms</td><td class="num">822</td><td class="num">$6.18</td><td class="num">10.4%</td></tr><tr><td>Hotels</td><td class="num">736</td><td class="num">$5.47</td><td class="num">12.3%</td></tr><tr><td>Construction</td><td class="num">592</td><td class="num">$5.38</td><td class="num">10.9%</td></tr><tr><td>Fine dining</td><td class="num">548</td><td class="num">$6.02</td><td class="num">11.1%</td></tr><tr><td>Real estate</td><td class="num">372</td><td class="num">$5.67</td><td class="num">12.5%</td></tr><tr><td>Solar</td><td class="num">372</td><td class="num">$4.88</td><td class="num">15.7%</td></tr><tr><td>Photography</td><td class="num">275</td><td class="num">$5.03</td><td class="num">15.0%</td></tr><tr><td>Clothing</td><td class="num">208</td><td class="num">$4.89</td><td class="num">16.8%</td></tr><tr><td>Fitness</td><td class="num">179</td><td class="num">$5.74</td><td class="num">7.3%</td></tr><tr><td>Fast food</td><td class="num">173</td><td class="num">$4.86</td><td class="num">13.1%</td></tr></tbody></table></div>
+          <p class="note">Figures from Google Ads for India only: $262,001 spend, 5,859,761 impressions, 407,521 clicks and $0.64 average CPC. Other countries run with their own targets, so they are not combined here. Amounts are converted from euros at about $1.16 to the euro.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="sec-head"><h2>What I do</h2></div>
+    <div class="services">
+      <div><h3>Paid search</h3><p class="muted">I work on Google Ads search campaigns built around buying intent, adjusting keywords and bids so cost per lead stays in line with what a lead is worth.</p></div>
+      <div><h3>Paid social</h3><p class="muted">I run LinkedIn and Meta campaigns from audience planning to creative testing, and I judge every format and variant on what it costs to win a lead or a sale.</p></div>
+      <div><h3>AI automation</h3><p class="muted">I build AI-assisted workflows for outbound, reporting and content, so repetitive campaign work runs faster and the team spends its time on decisions.</p></div>
+      <div><h3>Tracking and analytics</h3><p class="muted">I set up GA4 and Google Tag Manager so conversions are counted once and attributed sensibly, which makes the optimisation decisions trustworthy.</p></div>
+      <div><h3>Reporting</h3><p class="muted">I build Looker Studio reports that separate awareness from performance spend and explain what changed, why it changed and what to do next.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="tools">
+  <div class="wrap">
+    <div class="sec-head"><h2>Tools</h2></div>
+    <ul class="tools">
+      <li>Google Ads</li><li>Meta Ads</li><li>LinkedIn Campaign Manager</li><li>GA4</li>
+      <li>Google Tag Manager</li><li>Looker Studio</li><li>TikTok Ads</li><li>ChatGPT and Claude</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="hours">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Working hours</h2>
+      <p class="muted">I work remotely from India and align my hours with the team I join.</p>
+    </div>
+    <div class="hours">
+      <div><span class="muted">Location</span><b>India</b><span class="muted">IST, UTC+5:30</span></div>
+      <div><span class="muted">Hours</span><b>Aligned to your team</b><span class="muted">Any time zone, including UK, US and Australia</span></div>
+      <div><span class="muted">Availability</span><b>Full-time remote</b><span class="muted">Open to new roles</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact" style="border-top:none">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Hiring a performance marketer?</h2>
+      <p>I'm open to full-time remote roles. Email me with a little about your channels and goals, and I'll reply with how I would approach them.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:kashishsoni.work@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/kashish-sonii/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">© 2026 Kashish Soni. Case study figures come from platform exports and are shared without account IDs or confidential client names.</div></footer>
+
+<script>
+(function(){
+  const root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{const s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    const dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme')==='dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
